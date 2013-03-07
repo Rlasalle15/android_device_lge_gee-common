@@ -73,7 +73,7 @@ PRODUCT_COPY_FILES += \
 # Media
 PRODUCT_COPY_FILES += \
 	device/lge/gee-common/configs/media_profiles.xml:system/etc/media_profiles.xml \
-	device/lge/gee-common/configs/media_codecs.xml:system/etc/media_codecs.xml 
+	device/lge/gee-common/configs/media_codecs.xml:system/etc/media_codecs.xml
 
 # Non-Ramdisk Init Scripts
 PRODUCT_COPY_FILES += \
