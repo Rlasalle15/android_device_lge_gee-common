@@ -39,9 +39,6 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     librs_jni
 
-# Enable Torch
-PRODUCT_PACKAGES += Torch
-
 # Ramdisk
 PRODUCT_COPY_FILES += \
         device/lge/gee-common/ramdisk/init.gee.rc:root/init.gee.rc \
