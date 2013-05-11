@@ -198,6 +198,14 @@
                    channels="1" />
         </EncoderProfile>
 
+
+        <ImageEncoding quality="130" />
+        <ImageEncoding quality="120" />
+        <ImageEncoding quality="100" />
+        <ImageDecoding memCap="30000000" />
+
+        <Camera previewFrameRate="0" />
+
     </CamcorderProfiles>
 
     <CamcorderProfiles cameraId="1" startOffsetMs="300">
@@ -309,10 +317,12 @@
                    channels="1" />
         </EncoderProfile>
 
-        <ImageEncoding quality="95" />
-        <ImageEncoding quality="80" />
-        <ImageEncoding quality="70" />
-        <ImageDecoding memCap="20000000" />
+        <ImageEncoding quality="130" />
+        <ImageEncoding quality="120" />
+        <ImageEncoding quality="100" />
+        <ImageDecoding memCap="35000000" />
+
+        <Camera previewFrameRate="0" />
 
     </CamcorderProfiles>
 
