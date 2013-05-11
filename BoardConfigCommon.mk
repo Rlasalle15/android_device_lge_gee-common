@@ -14,23 +14,24 @@
 # limitations under the License.
 #
 
-# We optimize for cortex-a15 since krait is closer to a15 than a9
-# and slightly benefits in testing done.
-
-TARGET_GLOBAL_CFLAGS += -mfpu=neon -mtune=cortex-a15 -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mtune=cortex-a15 -mfloat-abi=softfp
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
+ARCH_ARM_HAVE_VFP := true
+ARCH_ARM_HAVE_NEON := true
 TARGET_CPU_VARIANT := krait
 TARGET_ARCH := arm
+TARGET_ARCH_VARIANT_CPU := cortex-a9
+TARGET_ARCH_VARIANT_FPU := neon
 TARGET_ARCH_VARIANT := armv7-a-neon
+# Krait optimizations
 TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
 TARGET_USE_KRAIT_PLD_SET := true
 TARGET_KRAIT_BIONIC_PLDOFFS := 10
 TARGET_KRAIT_BIONIC_PLDTHRESH := 64
 TARGET_KRAIT_BIONIC_BBTHRESH := 64
 TARGET_KRAIT_BIONIC_PLDSIZE := 64
+ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_NO_BOOTLOADER := true
 
