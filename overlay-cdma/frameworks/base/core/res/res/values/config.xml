@@ -18,6 +18,9 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- If this value is true, The mms content-disposition field is supported correctly. If false, Content-disposition fragments are ignored -->
+    <bool name="config_mms_content_disposition_support">false</bool>
+    
 <!-- An Array of "[Connection name],[ConnectivityManager.TYPE_xxxx],
          [associated radio-type],[priority],[restoral-timer(ms)],[dependencyMet]  -->
     <!-- the 5th element "resore-time" indicates the number of milliseconds to delay
