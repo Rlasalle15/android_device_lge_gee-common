@@ -169,6 +169,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Upto 3 layers can go through overlays
 PRODUCT_PROPERTY_OVERRIDES += debug.mdpcomp.maxlayer=3
 
+# QC RIL path for rild
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    rild.libpath=/system/lib/libril-qc-qmi-1.so 
+
 PRODUCT_TAGS += dalvik.gc.type-precise
 
 PRODUCT_PACKAGES += \
@@ -229,9 +233,6 @@ PRODUCT_PACKAGES += \
 	bdAddrLoader \
 	libwfcu \
 	conn_init
-
-PRODUCT_PROPERTY_OVERRIDES += \
-	rild.libpath=/system/lib/libril-qc-qmi-1.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	drm.service.enabled=true
