@@ -239,7 +239,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.interface=wlan0 \
-	wifi.supplicant_scan_interval=60 \
+	wifi.supplicant_scan_interval=180 \
 	persist.radio.kickstart=on
 
 # Enable AAC 5.1 output
