@@ -159,7 +159,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.audio.handset.mic=dmic \
 	persist.audio.fluence.mode=endfire \
-        persist.audio.lowlatency.rec=false \
+	persist.audio.lowlatency.rec=false \
 	af.resampler.quality=4
 
 # Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
